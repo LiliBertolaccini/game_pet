@@ -50,14 +50,16 @@
         }
         .video-container {
             display: flex;
-            flex-direction: column; /* Alinhar vídeos abaixo um do outro */
+            flex-direction: row; /* Alinhar vídeos e botões lado a lado */
             align-items: center;
+            justify-content: space-between;
             margin-bottom: 20px;
             max-width: 100%; /* Largura máxima agora é 100% */
             margin: 0 auto; /* Centralizar */
         }
         .video-container .video-left {
-            width: 100%; /* Vídeo ocupa toda a largura do container */
+            width: 70%; /* Largura do vídeo */
+            margin-right: 10px; /* Espaçamento entre vídeo e botão */
         }
         .video-container .video-left iframe {
             width: 100%; /* Vídeo ocupa toda a largura do container */
@@ -66,9 +68,8 @@
             transition: transform 0.3s ease; /* Transição suave para animação */
         }
         .video-container .button-right {
-            width: 100%; /* Botão ocupa toda a largura do container */
+            width: 25%; /* Largura do botão */
             text-align: center; /* Centralizar botão */
-            margin-top: 10px; /* Espaço acima do botão */
         }
         .button-link {
             display: inline-block;
@@ -86,6 +87,14 @@
         @media (max-width: 600px) {
           .video-container {
             flex-direction: column; /* Alterado para coluna em dispositivos móveis */
+            align-items: center; /* Centralizar conteúdo */
+          }
+          .video-container .video-left {
+            width: 100%; /* Vídeo ocupa toda a largura do container */
+            margin-bottom: 10px; /* Espaço abaixo do vídeo */
+          }
+          .video-container .button-right {
+            width: 100%; /* Botão ocupa toda a largura do container */
           }
         }
     </style>
