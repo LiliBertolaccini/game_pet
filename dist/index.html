@@ -50,22 +50,25 @@
         }
         .video-container {
             display: flex;
-            flex-direction: row; /* Alinhar vídeos à esquerda */
+            flex-direction: column; /* Alinhar vídeos abaixo um do outro */
             align-items: center;
-            justify-content: space-between;
             margin-bottom: 20px;
             max-width: 100%; /* Largura máxima agora é 100% */
             margin: 0 auto; /* Centralizar */
         }
-        .video-container iframe {
-            width: calc(100% + 20px); /* Aumenta em 20% a largura dos vídeos */
+        .video-container .video-left {
+            width: 100%; /* Vídeo ocupa toda a largura do container */
+        }
+        .video-container .video-left iframe {
+            width: 100%; /* Vídeo ocupa toda a largura do container */
             height: auto; /* Altura ajustável conforme a largura */
             cursor: pointer; /* Altera o cursor para indicar que o vídeo é clicável */
             transition: transform 0.3s ease; /* Transição suave para animação */
-            margin-left: -10px; /* Ajuste para compensar o aumento de largura */
         }
-        .button-right {
-            flex-shrink: 0; /* Impede que o botão encolha */
+        .video-container .button-right {
+            width: 100%; /* Botão ocupa toda a largura do container */
+            text-align: center; /* Centralizar botão */
+            margin-top: 10px; /* Espaço acima do botão */
         }
         .button-link {
             display: inline-block;
@@ -75,47 +78,14 @@
             text-decoration: none;
             border-radius: 5px;
             margin: 5px;
-            width: 150px; /* Largura dos botões */
+            width: 100%; /* Largura máxima do botão */
             text-align: center; /* Centralizar texto no botão */
         }
 
         /* Ajuste para dispositivos móveis */
         @media (max-width: 600px) {
-          body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-          }
-          header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1em;
-          }
-          main {
-            margin: 2em;
-          }
           .video-container {
             flex-direction: column; /* Alterado para coluna em dispositivos móveis */
-            align-items: center;
-          }
-          .video-container iframe {
-            width: 100%; /* Vídeo ocupa toda a largura do container */
-            height: auto; /* Altura ajustável conforme a largura */
-          }
-          .button-link {
-            width: auto; /* Ajuste para largura automática em dispositivos móveis */
-          }
-          button {
-            padding: 8px 16px; /* Ajuste no padding para dispositivos móveis */
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-          }
-          button:hover {
-            background-color: #45a049;
           }
         }
     </style>
