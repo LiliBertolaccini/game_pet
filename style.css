@@ -1,0 +1,68 @@
+/* CSS principal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333; /* Melhor contraste */
+}
+
+header {
+    background-color: #5800FF;
+    color: white;
+    padding: 1em;
+    text-align: center; /* Centralizar texto */
+}
+
+main {
+    background-color: #f56e84;
+    padding: 2em;
+    text-align: center; /* Centralizar conteúdo */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 0;
+    font-size: 0.8em;
+    text-align: center; /* Centralizar texto */
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a {
+    color: #4CAF50; /* Melhor contraste */
+    text-decoration: none;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna em dispositivos móveis */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 100%; /* Largura máxima agora é 100% */
+    margin: 0 auto; /* Centralizar */
+}
+
+.video-container iframe {
+    width: 100%; /* Vídeo ocupa toda a largura do container */
+    height: auto; /* Altura ajustável conforme a largura */
+    cursor: pointer; /* Altera o cursor para indicar que o vídeo é clicável */
+    transition: transform 0.3s ease; /* Transição suave para animação */
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    width: 150px; /* Largura dos botões */
+    text-align: center; /* Centralizar texto no botão */
+}
