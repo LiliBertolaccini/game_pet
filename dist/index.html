@@ -20,18 +20,16 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            color: #333; /* Melhor contraste */
+            color: white;
         }
         header {
             background-color: #5800FF;
             color: white;
             padding: 1em;
-            text-align: center; /* Centralizar texto */
         }
         main {
             background-color: #f56e84;
             padding: 2em;
-            text-align: center; /* Centralizar conteúdo */
         }
         footer {
             background-color: #333;
@@ -41,51 +39,16 @@
             width: 100%;
             bottom: 0;
             font-size: 0.8em;
-            text-align: center; /* Centralizar texto */
         }
         footer a {
             color: #4CAF50;
             text-decoration: none;
         }
         a {
-            color: #4CAF50; /* Melhor contraste */
-            text-decoration: none;
-        }
-        .video-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            max-width: 800px; /* Largura máxima */
-            margin: 0 auto; /* Centralizar */
-        }
-        .video-container iframe {
-            width: 70%; /* Ajuste para ocupar quase metade da largura disponível */
-            height: auto;
-            cursor: pointer; /* Altera o cursor para indicar que o vídeo é clicável */
-        }
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 5px;
-            width: 150px; /* Largura dos botões */
-            text-align: center; /* Centralizar texto no botão */
         }
     </style>
-    <script>
-        // Função para rolar a página até o elemento desejado
-        function scrollToElement(elementId) {
-            var element = document.getElementById(elementId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -97,204 +60,49 @@
             Este é um site de jogos para crianças. Focado em neurodivergentes/neuroatípicos de 4 a 6 anos.<br>
             Pensando na inclusão e que o jogo, além da diversão ou de passar o tempo, que também seja educativo. <br>
             <br>
+
+
+<br>
+
+<!-- Link para Pet Monsters -->
+<a href="https://lilibertola.itch.io/pet-monsters" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Pet Monsters</a>
+<br><br>
+
+<!-- Primeiro Vídeo do Vimeo (Pet 2) -->
+<div style="padding:10.28% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/978377581?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="pet 2"></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+
+<!-- Link para Desvie do raio com o Robô -->
+<a href="https://lilibertola.itch.io/game-robo" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Desvie do raio com o Robô</a>
+<br><br>
+
+<!-- Segundo Vídeo do Vimeo (Video Estrela) -->
+<div style="padding:10.28% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/978402491?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="video_estrela"></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<br>
+
+<!-- Link para Achar o Tênis -->
+<a href="https://lilibertola.itch.io/jogo-achar-o-tnis" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Achar o Tênis</a>
+<br><br>
+
+<!-- Link para Jogo da Memória -->
+<a href="https://sky-games86.itch.io/desafio-dos-pares" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Jogo da Memória</a>
+<br><br>
+
+<!-- Vídeo Local -->
+<video controls>
+    <source src="video_robo_fixed.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+</video>
+<br>
+         
+          
         </p>
-
-        <div class="video-container" id="video1" onclick="scrollToElement('video1');">
-            <!-- Primeiro Vídeo do Vimeo (Pet 2) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/978377581?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="pet 2"></iframe>
-            </div>
-            <!-- Botão para Pet Monsters -->
-            <div class="button-right">
-                <a href="https://lilibertola.itch.io/pet-monsters" target="_blank" class="button-link">Pet Monsters</a>
-            </div>
-        </div>
-
-        <div class="video-container" id="video2" onclick="scrollToElement('video2');">
-            <!-- Segundo Vídeo do Vimeo (Video Estrela) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/978402491?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="video_estrela"></iframe>
-            </div>
-            <!-- Botão para Desvie do raio com o Robô -->
-            <div class="button-right">
-                <a href="https://lilibertola.itch.io/game-robo" target="_blank" class="button-link">Desvie do raio com o Robô</a>
-            </div>
-        </div>
-
-        <div class="video-container" id="video3" onclick="scrollToElement('video3');">
-            <!-- Terceiro Vídeo do Vimeo (Achar o Tênis) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/978443048?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="jogo_tenis"></iframe>
-            </div>
-            <!-- Botão para Achar o Tênis -->
-            <div class="button-right">
-                <a href="https://lilibertola.itch.io/jogo-achar-o-tnis" target="_blank" class="button-link">Achar o Tênis</a>
-            </div>
-        </div>
-
-        <div class="video-container" id="video4" onclick="scrollToElement('video4');">
-            <!-- Quarto Vídeo do Vimeo (Jogo da Memória) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/979318757?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="video_dos_pares"></iframe>
-            </div>
-            <!-- Botão para Jogo da Memória -->
-            <div class="button-right">
-                <a href="https://sky-games86.itch.io/desafio-dos-pares" target="_blank" class="button-link">Jogo da Memória</a>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>
-            Contato: <a href="mailto:bertolaccini55@gmail.com">Email</a> | 
-            <a href="tel:+5515998204054">Celular</a> | 
-            <a href="https://www.linkedin.com/in/lilian-barros-bertolaccini" target="_blank">LinkedIn</a>
-        </p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Jogos para Crianças</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333; /* Melhor contraste */
-        }
-        header {
-            background-color: #5800FF;
-            color: white;
-            padding: 1em;
-            text-align: center; /* Centralizar texto */
-        }
-        main {
-            background-color: #f56e84;
-            padding: 2em;
-            text-align: center; /* Centralizar conteúdo */
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 0.5em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            font-size: 0.8em;
-            text-align: center; /* Centralizar texto */
-        }
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-        a {
-            color: #4CAF50; /* Melhor contraste */
-            text-decoration: none;
-        }
-        .video-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            max-width: 800px; /* Largura máxima */
-            margin: 0 auto; /* Centralizar */
-        }
-        .video-container iframe {
-            width: 70%; /* Ajuste para ocupar quase metade da largura disponível */
-            height: auto;
-            cursor: pointer; /* Altera o cursor para indicar que o vídeo é clicável */
-            transition: transform 0.3s ease; /* Transição suave para animação */
-        }
-        .video-container.expanded iframe {
-            width: 90%; /* Largura aumentada quando expandido */
-            height: 500px; /* Altura fixa quando expandido */
-        }
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 5px;
-            width: 150px; /* Largura dos botões */
-            text-align: center; /* Centralizar texto no botão */
-        }
-    </style>
-    <script>
-        // Função para expandir o vídeo ao ser clicado
-        function expandVideo(videoId) {
-            var iframe = document.getElementById(videoId);
-            iframe.parentNode.parentNode.classList.add('expanded'); // Adiciona a classe 'expanded' ao container pai do iframe
-        }
-
-        // Função para restaurar o tamanho original do vídeo
-        function restoreVideo(videoId) {
-            var iframe = document.getElementById(videoId);
-            iframe.parentNode.parentNode.classList.remove('expanded'); // Remove a classe 'expanded' do container pai do iframe
-        }
-    </script>
-</head>
-<body>
-    <header>
-        <h1>Play Kid's Games</h1>
-        <h3>by Lili</h3>
-    </header>
-    <main>
-        <p>
-            Este é um site de jogos para crianças. Focado em neurodivergentes/neuroatípicos de 4 a 6 anos.<br>
-            Pensando na inclusão e que o jogo, além da diversão ou de passar o tempo, que também seja educativo. <br>
-            <br>
-        </p>
-
-        <div class="video-container" id="video1" onclick="expandVideo('pet2');">
-            <!-- Primeiro Vídeo do Vimeo (Pet 2) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/978377581?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="pet 2" id="pet2"></iframe>
-            </div>
-            <!-- Botão para Pet Monsters -->
-            <div class="button-right">
-                <a href="https://lilibertola.itch.io/pet-monsters" target="_blank" class="button-link">Pet Monsters</a>
-            </div>
-        </div>
-
-        <div class="video-container" id="video2" onclick="expandVideo('video_estrela');">
-            <!-- Segundo Vídeo do Vimeo (Video Estrela) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/978402491?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="video_estrela" id="video_estrela"></iframe>
-            </div>
-            <!-- Botão para Desvie do raio com o Robô -->
-            <div class="button-right">
-                <a href="https://lilibertola.itch.io/game-robo" target="_blank" class="button-link">Desvie do raio com o Robô</a>
-            </div>
-        </div>
-
-        <div class="video-container" id="video3" onclick="expandVideo('jogo_tenis');">
-            <!-- Terceiro Vídeo do Vimeo (Achar o Tênis) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/978443048?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="jogo_tenis" id="jogo_tenis"></iframe>
-            </div>
-            <!-- Botão para Achar o Tênis -->
-            <div class="button-right">
-                <a href="https://lilibertola.itch.io/jogo-achar-o-tnis" target="_blank" class="button-link">Achar o Tênis</a>
-            </div>
-        </div>
-
-        <div class="video-container" id="video4" onclick="expandVideo('video_dos_pares');">
-            <!-- Quarto Vídeo do Vimeo (Jogo da Memória) -->
-            <div class="video-left">
-                <iframe src="https://player.vimeo.com/video/979318757?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="video_dos_pares" id="video_dos_pares"></iframe>
-            </div>
-            <!-- Botão para Jogo da Memória -->
-            <div class="button-right">
-                <a href="https://sky-games86.itch.io/desafio-dos-pares" target="_blank" class="button-link">Jogo da Memória</a>
-            </div>
-        </div>
     </main>
     <footer>
         <p>

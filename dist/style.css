@@ -1,28 +1,25 @@
-/* Ajuste para dispositivos móveis */
-@media (max-width: 600px) {
-  body {
+body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-  }
-  header {
+}
+header {
     background-color: #4CAF50;
     color: white;
     padding: 1em;
-  }
-  main {
+}
+main {
     margin: 2em;
-  }
-  button {
-    padding: 8px 16px; /* Ajuste no padding para dispositivos móveis */
+}
+button {
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-  }
-  button:hover {
+}
+button:hover {
     background-color: #45a049;
-  }
 }
