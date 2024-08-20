@@ -1,0 +1,33 @@
+﻿{
+	"version": 1724187663,
+	"fileList": [
+		"data.js",
+		"c2runtime.js",
+		"jquery-3.4.1.min.js",
+		"offlineClient.js",
+		"images/letters-sheet0.png",
+		"images/letters-sheet1.png",
+		"images/letters-sheet2.png",
+		"images/background-sheet0.png",
+		"images/borda1-sheet0.png",
+		"images/borda2-sheet0.png",
+		"images/borda3-sheet0.png",
+		"images/borda4-sheet0.png",
+		"images/play-sheet0.png",
+		"images/letra_topo-sheet0.png",
+		"images/letra_topo-sheet1.png",
+		"images/letra_topo-sheet2.png",
+		"images/bg_splah-sheet0.png",
+		"images/sprite-sheet0.png",
+		"images/particulas.png",
+		"images/particula2-sheet0.png",
+		"media/751642__josefpres__piano-loops-056-efect-3-octave-long-loop-120-bpm.m4a",
+		"media/751642__josefpres__piano-loops-056-efect-3-octave-long-loop-120-bpm.ogg",
+		"icon-16.png",
+		"icon-32.png",
+		"icon-114.png",
+		"icon-128.png",
+		"icon-256.png",
+		"loading-logo.png"
+	]
+}
