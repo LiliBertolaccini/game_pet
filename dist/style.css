@@ -34,23 +34,20 @@ footer a {
 }
 
 a {
-    color: #4CAF50; /* Melhor contraste */
+    color: #4CAF50;
     text-decoration: none;
 }
 
 .video-container {
     display: flex;
-    flex-direction: column; /* Alterado para coluna em dispositivos móveis */
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    max-width: 100%; /* Largura máxima agora é 100% */
-    margin: 0 auto; /* Centralizar */
+
 }
 
 .video-container iframe {
     width: 100%; /* Vídeo ocupa toda a largura do container */
-    height: auto; /* Altura ajustável conforme a largura */
+    height: 100vh; /* Altura ajustável conforme a largura */
     cursor: pointer; /* Altera o cursor para indicar que o vídeo é clicável */
     transition: transform 0.3s ease; /* Transição suave para animação */
 }
