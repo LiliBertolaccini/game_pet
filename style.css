@@ -7,6 +7,17 @@ body {
     color: #333; /* Melhor contraste */
 }
 
+p {
+  font-size: 20px;
+  color: #5800FF;
+  display: inline-block;
+  padding: 14px 20px;
+  background-color: white;
+  border-radius: 5px;
+  width: auto;
+  text-align: center;
+}
+
 header {
     background-color: #5800FF;
     color: white;
@@ -18,24 +29,6 @@ main {
     background-color: #f56e84;
     padding: 2em;
     text-align: center; /* Centralizar conteúdo */
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 0.5em 0;
-    font-size: 0.8em;
-    text-align: center; /* Centralizar texto */
-}
-
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a {
-    color: #4CAF50;
-    text-decoration: none;
 }
 
 .video-container {
